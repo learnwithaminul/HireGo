@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    nav>ul>li::after {
+        content: url('/src/images/icon.png');
+        width: 18px;
+        height: 18px;
+        line-height: 1;
+        top: 8px;
+        right: 0px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(0, 50%);
+    }
+    nav>ul>li:nth-child(4)::after {
+        content: "";
+        width: 0;
+        height: 0;
+        top: 0;
+        right: -0;
+        position: absolute;
+        
+    }
+  
+}
+
+@layer components{
+    .btn{
+        @apply rounded-full py-3 px-6 font-medium inline-flex items-center border 
+    }
+    .black_btn{
+        @apply text-white bg-btnBg gap-1 border-btnBg
+    }
+    .white_btn{
+        @apply text-textColor bg-white border-btnBg gap-3
+    }
+    h2{
+        @apply text-[28px] lg:text-[56px] font-semibold leading-tight tracking-tight 
+    }
+    h3{
+        @apply text-[28px] lg:text-[40px] font-semibold leading-tight tracking-tight 
+    }
+    p{
+        @apply text-[18px] leading-normal tracking-tighter text-bodyText
+    }
+
+  
+}
+@layer base{
+    html{
+        letter-spacing: -.3px;
+        padding: 0;
+        margin: 0;
+    }
+  
+}
