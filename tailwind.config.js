@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'sm': '640px',
+      'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -38,7 +38,7 @@ module.exports = {
     container:{
       center: true,
       padding: {
-        DEFAULT: '1rem',
+        DEFAULT: '1.5rem',
         "sm": '2rem',
         "lg": '4rem',
         "xl": '5rem',
